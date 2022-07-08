@@ -24,11 +24,9 @@ const ParticularCat = ({ dispatch, modal, particularCat, favouriteCats, source }
     const heartIconClickHandler = (e,id) => {
         e.stopPropagation();
         if(source === 'cats') {
-            console.log('1')
             dispatch({ type: SET_CAT_FAVOURITE, payload: id })
             
         } else {
-            console.log('2')
             dispatch({ type: SET_FAVOURITE_CAT_FAVOURITE, payload: id })
             
         }

@@ -46,7 +46,6 @@ export const reducer = (state, action) => {
                 ? state.favouriteCats.filter(cat => cat.id !== action.payload)
                 : [...state.favouriteCats, ...state.cats.filter(cat => cat.id === action.payload)];
                 localStorage.setItem('favouriteCats', JSON.stringify(value));
-                console.log(action.payload,value.length,state.cats.length,state.favouriteCats.some(cat => cat.id === action.payload), state.cats.filter(cat => cat.id === action.payload),state.cats)
             return {
                 ...state,
                 favouriteCats: value
@@ -56,7 +55,6 @@ export const reducer = (state, action) => {
                     ? state.favouriteCats.filter(cat => cat.id !== action.payload)
                     : [...state.favouriteCats, ...state.particularCatArr];
                     localStorage.setItem('favouriteCats', JSON.stringify(value2));
-                    console.log(action.payload,value2.length,state.favouriteCats.length,state.favouriteCats.some(cat => cat.id === action.payload), state.favouriteCats.filter(cat => cat.id === action.payload),state.favouriteCats)
                 return {
                     ...state,
                     favouriteCats: value2

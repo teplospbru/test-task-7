@@ -11,8 +11,8 @@ import AllCats from './screens/AllCats';
 import ParticularCat from "./components/ParticularCat";
 
 function App() {
-  const [{ cats, favouriteCats, error, modal, particularCat, page, favouritePage, particularCatArr, source }, dispatch] = useReducer( reducer, initialState );
-console.log(particularCatArr)
+  const [{ cats, favouriteCats, error, modal, particularCat, page, favouritePage, source }, dispatch] = useReducer( reducer, initialState );
+
   return (
     <Router>
       <div className="App">
