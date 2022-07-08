@@ -1,0 +1,7 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 39.999 37.564" id="heart-icon">
+        <g transform="translate(-56.837 -200.61)">
+            <path d="m61.913 205.67a10.552 10.493 0 0 0 1e-6 14.84l14.923 14.84 14.923-14.84a10.552 10.493 0 0 0 0-14.84 10.552 10.493 0 0 0-14.923 0 10.552 10.493 0 0 0-14.923 0z" stroke-linecap="square" stroke-width="4"/>
+        </g>
+    </symbol>
+</svg>
